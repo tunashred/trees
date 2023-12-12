@@ -102,7 +102,7 @@ void prim(Graph *graph, Graph *mst) {
         insert_node(i, mst);
     }
 
-    int current_node = 3;
+    int current_node = rand() % SIZE;
     int next_node, min;
 
     bool *added_nodes = calloc(mst->used_nodes, sizeof *added_nodes);
